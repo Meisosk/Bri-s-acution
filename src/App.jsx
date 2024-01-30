@@ -10,12 +10,12 @@ function App() {
   return (
     <BidProvider>
       <Bid2Provider>
-        <div className="h-screen ">
-          <div className="h-full bg-blue-400  ">
+        <div className="flex flex-col min-h-screen">
+          <div className="flex-grow bg-blue-400">
             <Hero></Hero>
-            <div className="flex h-4/5 justify-center">
-              <div className="flex flex-col md:justify-around  md:flex-row items-center h-auto w-full ">
-                <div className="flex md:flex-col items-start md:max-w-[50vw] sm:px-20 md:px-0 ">
+            <div className="flex justify-center">
+              <div className="flex flex-col md:justify-around md:flex-row items-center h-auto w-full">
+                <div className="flex md:flex-col items-start md:max-w-[50vw] sm:px-20 md:px-0">
                   <div className="flex flex-col md:flex-row items-center">
                     <TicketSec ticketNum={1} />
                     <div className="flex flex-col justify-center max-w-[50%]">
@@ -29,7 +29,7 @@ function App() {
                   </div>
                   <div className="flex flex-col md:flex-row items-center">
                     <TicketSec />
-                    <div className="flex flex-col justify-center  max-w-[50%]">
+                    <div className="flex flex-col justify-center max-w-[50%]">
                       <p className="font-bold text-[2vw]">
                         Current Highest Bid:{" "}
                       </p>
@@ -40,7 +40,7 @@ function App() {
                   </div>
                 </div>
                 <div className="w-4/5 md:w-2/5 flex p-10 items-center">
-                  <p class="lg:text-2xl font-bold text-gray-800  md:text-lg text-center md:text-left">
+                  <p className="lg:text-2xl font-bold text-gray-800 md:text-lg text-center md:text-left">
                     All money will be donated to Israel. The auction will be
                     open from February 1-29. The highest bidders will be
                     contacted by Brianna. In case of an issue with the highest
@@ -51,10 +51,10 @@ function App() {
               </div>
             </div>
           </div>
-          <footer class="bg-gray-800 text-white p-4 text-center">
+          <footer className="bg-gray-800 text-white p-4 text-center mt-auto">
             <p>
               Contact Brianna Loshin at{" "}
-              <a href="tel:2406786034" class="underline">
+              <a href="tel:2406786034" className="underline">
                 240-678-6034
               </a>{" "}
               with questions
