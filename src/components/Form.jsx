@@ -53,82 +53,82 @@ function Form({ closeModal, ticketNum }) {
         <div>
           <label
             htmlFor="name"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-md font-medium text-gray-700"
           >
-            Name:
+            Name<span className="text-red-500">*</span>:
           </label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
           />
         </div>
 
         <div>
           <label
             htmlFor="email"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-md font-medium text-gray-700"
           >
-            Email:
+            Email<span className="text-red-500">*</span>:
           </label>
           <input
             type="email"
             id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
           />
         </div>
 
         <div>
           <label
             htmlFor="phoneNumber"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-md font-medium text-gray-700"
           >
-            Phone Number:
+            Phone Number<span className="text-red-500">*</span>:
           </label>
           <input
             type="tel"
             id="phoneNumber"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
           />
         </div>
 
         <div>
           <label
             htmlFor="bid"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-md font-medium text-gray-700"
           >
-            Bid:
+            Bid<span className="text-red-500">*</span>:
           </label>
           <input
             type="text"
             id="bid"
             value={bid}
             onChange={(e) => setBid(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
           />
         </div>
 
         <div>
           <label
             htmlFor="organization"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-md font-medium text-gray-700"
           >
-            Select an Organization:
+            Select an Organization<span className="text-red-500">*</span>:
           </label>
           <select
             id="organization"
             value={organization}
             onChange={(e) => setOrganization(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md"
+            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
           >
             <option value="" disabled>
-              Choose an Organization
+              Organization to doante to:
             </option>
             <option value="MDA">MDA</option>
             <option value="FIDF">FIDF</option>
@@ -139,7 +139,7 @@ function Form({ closeModal, ticketNum }) {
         <div>
           <label
             htmlFor="comments"
-            className="block text-sm font-medium text-gray-700"
+            className="block text-md font-medium text-gray-700"
           >
             Comments:
           </label>
@@ -147,13 +147,13 @@ function Form({ closeModal, ticketNum }) {
             id="comments"
             value={comments}
             onChange={(e) => setComments(e.target.value)}
-            className="mt-1 p-2 w-full border rounded-md resize-none"
+            className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500 esize-none"
           />
         </div>
 
         <button
           type="submit"
-          className="bg-blue-500 text-white p-2 rounded-md hover:bg-blue-600"
+          className="bg-blue-500 text-white p-2 px-5 rounded-md hover:bg-blue-600 shadow-lg"
         >
           Submit
         </button>
