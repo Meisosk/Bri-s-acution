@@ -42,10 +42,11 @@ function App() {
                 <div className="w-4/5 md:w-2/5 flex p-10 items-center">
                   <p className="lg:text-2xl font-bold text-gray-800 md:text-lg text-center md:text-left">
                     All money will be donated to Israel. The auction will be
-                    open from February 1-29. The highest bidders will be
+                    open until February 29th 2024. The highest bidders will be
                     contacted by Brianna. In case of an issue with the highest
                     bidders, the next highest bidders will be contacted. A total
-                    of four tickets in two sets of pairs are being auctioned off
+                    of four tickets in two sets of pairs are being auctioned
+                    off.
                   </p>
                 </div>
               </div>

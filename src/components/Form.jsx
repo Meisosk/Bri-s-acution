@@ -128,7 +128,7 @@ function Form({ closeModal, ticketNum }) {
             className="mt-1 p-2 w-full border rounded-md focus:outline-none focus:border-blue-500"
           >
             <option value="" disabled>
-              Organization to doante to:
+              Organization to donate to:
             </option>
             <option value="MDA">MDA</option>
             <option value="FIDF">FIDF</option>
